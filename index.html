@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GigaBite Technologies LLC</title>
+  <meta name="description" content="GigaBite Technologies LLC — product engineering, SaaS, interactive media, and consulting by Steven Garberg." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="GigaBite Technologies Home">
+        <!-- Inline SVG "Circuit G" mark -->
+        <div class="brand-mark" aria-hidden="true">
+          <svg class="logo-mark" width="28" height="28" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GigaBite Technologies logo">
+            <path d="M36 18h56l18 18v56l-18 18H36L18 92V36L36 18Z" stroke="currentColor" stroke-width="10" stroke-linejoin="round"/>
+            <path d="M48 44h32c8 0 14 6 14 14v2h-22" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72 76h22v4c0 8-6 14-14 14H48c-8 0-14-6-14-14V58c0-8 6-14 14-14" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <path d="M52 74V60" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="52" cy="56" r="8" fill="currentColor"/>
+
+            <path d="M70 86V64" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="70" cy="60" r="8" fill="currentColor"/>
+
+            <path d="M88 78H76" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="92" cy="78" r="8" fill="currentColor"/>
+          </svg>
+        </div>
+
+        <div class="brand-text">
+          <div class="brand-name">GigaBite Technologies</div>
+          <div class="brand-sub">Product Engineering • SaaS • Interactive • Consulting</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#what" class="nav-link">What we do</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#brands" class="nav-link">Brands</a>
+          <a href="#story" class="nav-link">Story</a>
+          <a href="#links" class="nav-link">Links</a>
+          <a href="#contact" class="nav-link nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GigaBite Technologies LLC</p>
+
+          <h1 class="hero-title">
+            Senior product engineering for modern software — with a creative edge.
+          </h1>
+
+          <p class="hero-subtitle">
+            We build SaaS platforms, internal tools, and interactive experiences (including Unity-based media).
+            Founded and operated by <strong>Steven Garberg</strong> in Florida.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Start a conversation</a>
+            <a class="button ghost" href="#services">Explore services</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Highlights">
+            <div class="badge">.NET / C#</div>
+            <div class="badge">Azure Cloud</div>
+            <div class="badge">SaaS Product Development</div>
+            <div class="badge">Unity (Web • Desktop • Mobile)</div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- IMAGE SLOT: HERO_VISUAL
+               Recommendation: abstract futuristic circuit / network, blue-purple, dark.
+               Place file in /assets/hero-tech.jpg (or .png)
+          -->
+          <figure class="hero-visual">
+            <img
+              src="assets/hero-tech.jpg"
+              alt="Abstract technology visual representing modern software and systems"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+
+          <div class="hero-card" role="presentation">
+            <div class="hero-card-inner">
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="stat-num">12+ yrs</div>
+                  <div class="stat-label">Software & product building</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">SaaS</div>
+                  <div class="stat-label">Multi-app platforms & tooling</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">Unity</div>
+                  <div class="stat-label">Interactive & simulation work</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">Florida</div>
+                  <div class="stat-label">US-based delivery</div>
+                </div>
+              </div>
+
+              <div class="card-note">
+                <div class="chip">Approach</div>
+                <p>
+                  Clear scope, clean execution, and systems that hold up under real-world usage.
+                  Ideal when you need someone who can design and deliver.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- IMAGE SLOT: WHAT_BANNER (optional)
+         If you want a transitional banner between hero and what-we-do:
+         Put a very subtle full-width image in /assets/section-banner.jpg
+    -->
+    <section class="section-banner" aria-hidden="true">
+      <div class="container">
+        <div class="banner-frame">
+          <img src="assets/section-banner.jpg" alt="" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="section" id="what">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we do</h2>
+          <p>
+            GigaBite Technologies builds and supports product-driven businesses — from cloud software to interactive media.
+            We can act as your engineering partner for greenfield builds, modernization efforts, and special projects.
+          </p>
+        </div>
+
+        <div class="cards three">
+          <article class="card">
+            <h3>Product & SaaS engineering</h3>
+            <p>Practical, scalable software with strong UX and maintainability.</p>
+            <ul class="list">
+              <li>Multi-tenant SaaS platforms</li>
+              <li>Admin portals & internal tooling</li>
+              <li>Payments, auth, and integrations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Interactive media</h3>
+            <p>Unity-powered experiences for web, desktop, and mobile — games, demos, prototypes, and simulations.</p>
+            <ul class="list">
+              <li>Unity (WebGL, Windows, Mac, iOS, Android)</li>
+              <li>UI flows & mobile-friendly interactions</li>
+              <li>Interactive demos & simulations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Consulting & modernization</h3>
+            <p>Senior-level architecture and implementation when you need outcomes, not overhead.</p>
+            <ul class="list">
+              <li>.NET / C# and cloud architecture</li>
+              <li>Performance & reliability improvements</li>
+              <li>DevEx, CI/CD, and operational maturity</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Flexible engagement models — from scoped builds to advisory support.</p>
+        </div>
+
+        <!-- Pillar cards with images -->
+        <div class="cards three">
+          <article class="card card-media">
+            <!-- IMAGE SLOT: PILLAR_IMAGE_SAAS -->
+            <div class="card-media-top">
+              <img src="assets/pillar-saas.jpg" alt="SaaS product engineering visual" loading="lazy" decoding="async">
+            </div>
+            <h3>Product build & launch</h3>
+            <p class="muted">MVPs, production releases, and iterative roadmaps with high-quality engineering fundamentals.</p>
+          </article>
+
+          <article class="card card-media">
+            <!-- IMAGE SLOT: PILLAR_IMAGE_INTERACTIVE -->
+            <div class="card-media-top">
+              <img src="assets/pillar-interactive.jpg" alt="Interactive media and Unity development visual" loading="lazy" decoding="async">
+            </div>
+            <h3>Unity & interactive development</h3>
+            <p class="muted">Interactive apps, simulations, and polished experiences with shippable pipelines.</p>
+          </article>
+
+          <article class="card card-media">
+            <!-- IMAGE SLOT: PILLAR_IMAGE_CONSULTING -->
+            <div class="card-media-top">
+              <img src="assets/pillar-consulting.jpg" alt="Consulting and modernization visual" loading="lazy" decoding="async">
+            </div>
+            <h3>Consulting & modernization</h3>
+            <p class="muted">Architecture, reliability improvements, and delivery acceleration when you need outcomes.</p>
+          </article>
+        </div>
+
+        <div class="service-grid" style="margin-top: 14px;">
+          <div class="service">
+            <h3>Platform engineering</h3>
+            <p>Cloud infrastructure, CI/CD, security posture, monitoring, and scalable architecture.</p>
+          </div>
+          <div class="service">
+            <h3>Modernization</h3>
+            <p>Migrations, refactors, and performance tuning for systems that need a reliable second wind.</p>
+          </div>
+          <div class="service">
+            <h3>Interactive contracting</h3>
+            <p>Client work that needs more than a website: interactive demos, training tools, and media.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Availability</h3>
+            <p>If you have a project in mind, send a brief note with goals, timeline, and constraints.</p>
+          </div>
+          <a class="button primary" href="#contact">Request availability</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="section" id="brands">
+      <div class="container">
+        <div class="section-head">
+          <h2>Brands & products</h2>
+          <p>GigaBite Technologies is the umbrella. Individual products and brands may operate under DBAs.</p>
+        </div>
+
+        <div class="cards two">
+          <article class="card card-brand">
+            <!-- IMAGE SLOT: BRAND_THUMB_GAMES -->
+            <div class="brand-thumb">
+              <img src="assets/brand-gigabite-games.jpg" alt="GigaBite Games thumbnail" loading="lazy" decoding="async">
+            </div>
+            <div class="brand-body">
+              <h3>GigaBite Games</h3>
+              <p>Video games and interactive simulations built with Unity for web, desktop, and mobile.</p>
+              <div class="tag-row">
+                <span class="tag">Unity</span><span class="tag">Games</span><span class="tag">Interactive</span>
+              </div>
+              <div class="card-links">
+                <a class="link" href="https://gigabite.games/" target="_blank" rel="noopener">Visit gigabite.games →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-brand">
+            <!-- IMAGE SLOT: BRAND_THUMB_HOOTBOOKS -->
+            <div class="brand-thumb">
+              <img src="assets/brand-hootbooks.jpg" alt="HootBooks thumbnail" loading="lazy" decoding="async">
+            </div>
+            <div class="brand-body">
+              <h3>HootBooks</h3>
+              <p>Cloud accounting and business management SaaS launched in early 2024 — focused on clarity and speed.</p>
+              <div class="tag-row">
+                <span class="tag">SaaS</span><span class="tag">Accounting</span><span class="tag">Small Business</span>
+              </div>
+              <div class="card-links">
+                <a class="link" href="https://hootbooks.com/" target="_blank" rel="noopener">Visit hootbooks.com →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>Senior engineering support for product teams: architecture, implementation, and delivery acceleration.</p>
+            <div class="tag-row">
+              <span class="tag">.NET</span><span class="tag">Azure</span><span class="tag">Architecture</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Future ventures</h3>
+            <p>New SaaS products, tools, and eCommerce initiatives that complement our interactive projects.</p>
+            <div class="tag-row">
+              <span class="tag">SaaS</span><span class="tag">Tools</span><span class="tag">eCommerce</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section alt" id="story">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our story</h2>
+          <p>Built with a long-term mindset: strong fundamentals, clean delivery, and a bias toward shipping.</p>
+        </div>
+
+        <div class="story-grid">
+          <div class="card story-card">
+            <!-- IMAGE SLOT: STORY_IMAGE (optional) -->
+            <div class="story-photo">
+              <img src="assets/story-workspace.jpg" alt="A studio workspace representing hands-on product building" loading="lazy" decoding="async">
+            </div>
+
+            <h3>Steven Garberg</h3>
+            <p class="muted">Founder • Engineer • Product builder</p>
+
+            <p>
+              Steven has spent over a decade building software across cloud, web, and interactive platforms.
+              His work blends product thinking with hands-on engineering — the kind that scales, survives, and stays maintainable.
+            </p>
+            <p>
+              GigaBite Technologies unifies SaaS product development, consulting work, and interactive media under one roof —
+              so clients and customers get the same level of engineering rigor, whether it’s a platform or a playable experience.
+            </p>
+
+            <div class="pill-row">
+              <span class="pill">C# / .NET</span>
+              <span class="pill">Azure</span>
+              <span class="pill">SaaS</span>
+              <span class="pill">Unity</span>
+            </div>
+          </div>
+
+          <div class="timeline" aria-label="Timeline">
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Early years</div>
+                <div class="timeline-text">Freelance development + product experimentation.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">Studio + services growth</div>
+                <div class="timeline-text">Web, cloud, and interactive work expands across multiple ventures.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">HootBooks (2024)</div>
+                <div class="timeline-text">Cloud accounting and business management SaaS launched.</div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-title">GigaBite Technologies</div>
+                <div class="timeline-text">Umbrella company formed to unify products, consulting, and future ventures.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote">
+          <p>“Build things that are useful, build things that are fun, and build them like you plan to maintain them.”</p>
+          <span class="quote-by">— GigaBite Technologies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section" id="links">
+      <div class="container">
+        <div class="section-head">
+          <h2>Links</h2>
+          <p>Find our products and profiles.</p>
+        </div>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>Products</h3>
+            <ul class="list">
+              <li><a class="link" href="https://gigabite.games/" target="_blank" rel="noopener">GigaBite Games →</a></li>
+              <li><a class="link" href="https://hootbooks.com/" target="_blank" rel="noopener">HootBooks →</a></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Profiles</h3>
+            <ul class="list">
+              <li><a class="link" href="https://www.linkedin.com/in/sgarberg/" target="_blank" rel="noopener">LinkedIn (Steven Garberg) →</a></li>
+              <li><a class="link" href="https://github.com/stevengarberg" target="_blank" rel="noopener">GitHub (stevengarberg) →</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Want to collaborate or ask about availability? Send a note — we’ll get back to you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-card">
+            <h3>Send a message</h3>
+
+            <form id="contactForm" class="form">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" placeholder="Your name" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" placeholder="you@company.com" required />
+              </label>
+
+              <label>
+                <span>What can we help with?</span>
+                <select name="topic" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option value="SaaS product">SaaS product</option>
+                  <option value="Consulting">Consulting</option>
+                  <option value="Interactive media (Unity)">Interactive media (Unity)</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell me what you're building..." required></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="button primary" type="submit">Generate email</button>
+                <a class="button ghost" id="mailtoFallback" href="#">Open mail app</a>
+              </div>
+
+              <p class="form-note muted" id="formNote">
+                This form generates an email draft locally (no server yet).
+              </p>
+            </form>
+          </div>
+
+          <aside class="card contact-side">
+            <h3>Quick details</h3>
+            <ul class="kv">
+              <li><span>Email</span><span>steven@gigabite.tech</span></li>
+              <li><span>Company</span><span>GigaBite Technologies LLC</span></li>
+              <li><span>Location</span><span>Florida, USA</span></li>
+              <li><span>Focus</span><span>SaaS • Consulting • Interactive</span></li>
+            </ul>
+
+            <div class="mini">
+              <div class="chip">Next</div>
+              <p class="muted">
+                When you’re ready, we can add “Work” and “Products” sections and optionally wire this form
+                to an Azure Function (or another lightweight endpoint).
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-mark" aria-hidden="true">
+            <svg class="logo-mark small" width="18" height="18" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36 18h56l18 18v56l-18 18H36L18 92V36L36 18Z" stroke="currentColor" stroke-width="10" stroke-linejoin="round"/>
+              <path d="M48 44h32c8 0 14 6 14 14v2h-22" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M72 76h22v4c0 8-6 14-14 14H48c-8 0-14-6-14-14V58c0-8 6-14 14-14" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M52 74V60" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="52" cy="56" r="8" fill="currentColor"/>
+              <path d="M70 86V64" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="70" cy="60" r="8" fill="currentColor"/>
+              <path d="M88 78H76" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="92" cy="78" r="8" fill="currentColor"/>
+            </svg>
+          </span>
+          <span>GigaBite Technologies LLC</span>
+        </div>
+        <div class="muted">© <span id="year"></span> • Built with static HTML/CSS/JS</div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#top" class="muted">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
